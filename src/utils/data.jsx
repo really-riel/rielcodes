@@ -20,7 +20,7 @@ export const projectsData = [
     title: "Goldenursh",
     technologies: ["React.js", "Firebase", "SCSS", "easypeasy"],
     description:
-      "This is a fully responsive online food delivery platform. customers can create account, it also has an admin page",
+      "This is a fully responsive online food delivery service, catering to customers' needs with features including account creation, an intuitive admin interface, and a dedicated chatroom facilitating seamless communication between users and administrators.",
     liveDemo: "https://goldenursh.vercel.app",
     codeLink: "https://github.com/really-riel/goldenursh",
   },
@@ -29,7 +29,7 @@ export const projectsData = [
     images: [SpaceHome, SpaceDestination, SpaceCrew, SpaceTech],
     title: "Space Tourism",
     technologies: ["React.js", "SCSS"],
-    description: "online food delivery platform",
+    description: "This is a front end mentor challenge",
     liveDemo: "https://rielspacetourism.vercel.app",
     codeLink: "https://github.com/really-riel/space-tourism-website",
   },

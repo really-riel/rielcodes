@@ -26,7 +26,11 @@ const Slider = ({ images }) => {
         }}
       >
         {images?.map((s, index) => (
-          <img className="rounded-lg min-h-60" src={s} key={index} />
+          <img
+            className="rounded-lg min-h-60 md:min-h-72"
+            src={s}
+            key={index}
+          />
         ))}
       </div>
 

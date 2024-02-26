@@ -10,7 +10,7 @@ const Projects = () => {
       className="p-4 w-[95%] bg-white shadow-2xl rounded-xl flex flex-col gap-3"
     >
       <h2>{project.title}</h2>
-      <div className="flex flex-col md:grid md:grid-cols-2 md:gap-2 ">
+      <div className="flex flex-col md:grid md:grid-cols-2 md:gap-5 ">
         <Slider images={project.images} />
 
         <div className="flex flex-col gap-3 mt-4 grow">
