@@ -1,6 +1,7 @@
 import React from "react";
 import pf from "../assets/whatsapp pfp.jpg";
 import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
+import { MdArrowDownward } from "react-icons/md";
 
 const Banner = () => {
   return (
@@ -52,9 +53,9 @@ const Banner = () => {
 
         <a
           href="#aboutMe"
-          className="absolute grid w-6 h-10 -translate-x-1/2 border-2 border-black rounded-full cursor-pointer bottom-5 left-1/2 place-content-center "
+          className="absolute bottom-0 text-3xl transform -translate-x-1/2 cursor-pointer left-1/2 text-blue-950"
         >
-          <div className=" w-1 h-1.5 bg-black  rounded-full animate-bounce "></div>
+          <MdArrowDownward className="animate-bounce" />
         </a>
       </div>
     </section>
@@ -62,3 +63,12 @@ const Banner = () => {
 };
 
 export default Banner;
+
+{
+  /* <a
+          href="#aboutMe"
+          className="absolute grid w-6 h-10 -translate-x-1/2 border-2 border-black rounded-full cursor-pointer bottom-5 left-1/2 place-content-center animate-bounce "
+        >
+          <div className=" w-1 h-1.5 bg-black  rounded-full "></div>
+        </a> */
+}

@@ -17,11 +17,7 @@ const SideMenu = ({ setIsSideMenuOpen }) => {
         </div>
         <nav className="">
           <ul className="flex flex-col gap-4 mt-4 ">
-            <a
-              href="#"
-              className=" active:bg-red-500"
-              onClick={() => setIsSideMenuOpen(false)}
-            >
+            <a href="#" className="" onClick={() => setIsSideMenuOpen(false)}>
               <li>Home</li>
             </a>
             <a href="#aboutMe" onClick={() => setIsSideMenuOpen(false)}>
