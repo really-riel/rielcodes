@@ -27,7 +27,7 @@ function App() {
           </g>
         </svg>
         <Header />
-        <main className="w-full mx-auto max-w-[1000px]  ">
+        <main className="w-full mx-auto max-w-[1000px] flex flex-col gap-6 ">
           <Banner />
           <AboutMe />
           <Projects />

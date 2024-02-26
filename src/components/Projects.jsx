@@ -7,7 +7,7 @@ const Projects = () => {
   const content = projectsData.map((project, index) => (
     <div
       key={index}
-      className="p-4 w-[95%]  shadow-2xl rounded-xl flex flex-col gap-3"
+      className="p-4 w-[95%] bg-white shadow-2xl rounded-xl flex flex-col gap-3"
     >
       <h2>{project.title}</h2>
       <div className="flex flex-col md:grid md:grid-cols-2 md:gap-2 ">
@@ -41,18 +41,15 @@ const Projects = () => {
   ));
 
   return (
-    <section
-      id="projects"
-      className="relative flex flex-col items-center w-full gap-5 scroll-mt-16"
-    >
+    <section id="projects" className="relative scroll-mt-20 ">
       <svg
         id="visual"
         viewBox="0 0 1200 1200"
-        width="800"
+        width="1000"
         height="1200"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        class=" absolute -z-20  top-0 rotate-45  -right-[700px] lg:-right-[600px]"
+        class=" absolute -z-20  top-0 rotate-45  -right-[800px] lg:-right-[900px]"
       >
         <g transform="translate(927.4519875387796 -111.9512848530959)">
           <path
@@ -61,9 +58,12 @@ const Projects = () => {
           ></path>
         </g>
       </svg>
-      <h2 className="text-[clamp(1rem,_1rem_+_1vw,_1.8rem)] z-20">Projects</h2>
-      <div className="z-10 flex flex-col items-center w-full max-w-full gap-6">
-        {content}
+
+      <div className="flex flex-col items-center w-full gap-5 ">
+        <h2 className="text-[clamp(1rem,_1rem_+_1vw,_1.8rem)] ">Projects</h2>
+        <div className="flex flex-col items-center w-full max-w-full gap-10">
+          {content}
+        </div>
       </div>
     </section>
   );

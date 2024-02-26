@@ -18,16 +18,16 @@ const Header = () => {
         {/* Desktop nav */}
         <nav className="hidden md:flex">
           <ul className="flex items-center gap-3 ">
-            <a href="#" className="active:text-red-400">
+            <a href="#" className="active:text-blue-950">
               <li>Home</li>
             </a>
-            <a href="#aboutMe">
+            <a href="#aboutMe" className="active:text-blue-950">
               <li>About Me</li>
             </a>
-            <a href="#projects">
+            <a href="#projects" className="active:text-blue-950">
               <li>Projects</li>
             </a>
-            <a href="#contactMe">
+            <a href="#contactMe" className="active:text-blue-950">
               <li>Contact</li>
             </a>
           </ul>

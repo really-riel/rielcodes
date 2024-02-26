@@ -1,16 +1,16 @@
 import React from "react";
-import pf from "../assets/pf.jpg";
+import pf from "../assets/whatsapp pfp.jpg";
 import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
 
 const Banner = () => {
   return (
     <section className="relative grid w-full px-2 py-20 overflow-hidden min-h-svh place-content-center ">
       <div className="text-[clamp(1rem,_0.2rem_+_1vw,_2rem)]  flex flex-col justify-center lg:flex-row-reverse  mx-auto gap-6">
-        <figure className="w-48 h-48 md:w-60 md:h-60 rounded-[50%] overflow-hidden mx-auto">
+        <figure className="w-52 h-52 md:w-72 md:h-72 rounded-[50%] overflow-hidden mx-auto">
           <img
             src={pf}
             alt="Irregular frame"
-            className="object-cover w-full h-full irregular-frame-image"
+            className="object-cover object-top w-full h-full irregular-frame-image"
           />
         </figure>
         <div className="grid gap-1 ">
@@ -33,13 +33,15 @@ const Banner = () => {
               <IoLogoTwitter className="text-xl" />
             </a>
             <a
-              href=""
+              href="http://www.linkedin.com/in/adeolu-adeyinka-54b208201"
+              target="_blank"
               className="bg-blue-100 w-10  rounded-[50%]  h-10 grid  place-content-center"
             >
               <IoLogoLinkedin className="text-xl" />{" "}
             </a>
             <a
-              href=""
+              href="https://github.com/really-riel"
+              target="_blank"
               className="bg-blue-100 w-10  rounded-[50%]  h-10 grid  place-content-center"
             >
               {" "}
@@ -50,9 +52,9 @@ const Banner = () => {
 
         <a
           href="#aboutMe"
-          className="absolute w-6 h-10 -translate-x-1/2 border-2 border-black rounded-full cursor-pointer bottom-5 left-1/2 "
+          className="absolute grid w-6 h-10 -translate-x-1/2 border-2 border-black rounded-full cursor-pointer bottom-5 left-1/2 place-content-center "
         >
-          <div className="absolute w-1 h-1.5 bg-black top-1/2 right-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 rounded-full animate-bounce"></div>
+          <div className=" w-1 h-1.5 bg-black  rounded-full animate-bounce "></div>
         </a>
       </div>
     </section>
