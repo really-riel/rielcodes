@@ -6,7 +6,7 @@ const Header = () => {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
   return (
     <>
-      <header className="flex justify-between items-center fixed mx-auto   inset-x-[10px] top-0 bg-blue-950 bg-opacity-50 backdrop-filter backdrop-blur-lg backdrop-saturate-150 p-2 rounded-xl mt-2 z-50 max-w-[1000px]">
+      <header className="flex justify-between items-center fixed mx-auto   inset-x-[10px] top-0 bg-blue-950 bg-opacity-50 backdrop-filter backdrop-blur-lg backdrop-saturate-150 p-3 rounded-xl mt-2 z-50 max-w-[1000px] text-white color">
         <h1 className="text-xl italic font-extrabold text-white color">
           Riel Codes
         </h1>
@@ -17,14 +17,14 @@ const Header = () => {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex">
-          <ul className="flex ">
-            <a href="#">
+          <ul className="flex items-center gap-3 ">
+            <a href="#" className="active:text-red-400">
               <li>Home</li>
             </a>
             <a href="#aboutMe">
               <li>About Me</li>
             </a>
-            <a href="#project">
+            <a href="#projects">
               <li>Projects</li>
             </a>
             <a href="#contactMe">

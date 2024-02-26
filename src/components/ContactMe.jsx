@@ -23,11 +23,15 @@ const ContactMe = () => {
   };
   return (
     <section
-      className="flex flex-col w-full p-5 lg:grid lg:grid-cols-2 lg:flex-row min-h-svh scroll-mt-12"
+      className="flex flex-col justify-center w-full p-5 lg:grid lg:grid-cols-2 lg:flex-row min-h-svh scroll-mt-12 lg:place-content-center"
       id="contactMe"
     >
       <div className="">
-        <h2 className="clamp(1rem,_1rem_+_1vw,_1.2rem)]">Contact Me</h2>
+        <h2 className="text-[clamp(1rem,_1rem_+_1vw,_1.8rem)] ">Contact Me</h2>
+        <p>
+          if you have any oppurtunities, ideas or questions, fill up the form
+          and I will be in touch with you
+        </p>
 
         <a
           href="mailto:ag.adeyinka@gmail.com"

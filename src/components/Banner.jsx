@@ -4,7 +4,7 @@ import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
 
 const Banner = () => {
   return (
-    <section className="relative grid w-full px-2 py-20 min-h-svh place-content-center ">
+    <section className="relative grid w-full px-2 py-20 overflow-hidden min-h-svh place-content-center ">
       <div className="text-[clamp(1rem,_0.2rem_+_1vw,_2rem)]  flex flex-col justify-center lg:flex-row-reverse  mx-auto gap-6">
         <figure className="w-48 h-48 md:w-60 md:h-60 rounded-[50%] overflow-hidden mx-auto">
           <img

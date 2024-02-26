@@ -27,7 +27,7 @@ const SideMenu = ({ setIsSideMenuOpen }) => {
             <a href="#aboutMe" onClick={() => setIsSideMenuOpen(false)}>
               <li>About Me</li>
             </a>
-            <a href="#project" onClick={() => setIsSideMenuOpen(false)}>
+            <a href="#projects" onClick={() => setIsSideMenuOpen(false)}>
               <li>Projects</li>
             </a>
             <a href="#contactMe" onClick={() => setIsSideMenuOpen(false)}>

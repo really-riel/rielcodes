@@ -3,9 +3,26 @@ import React from "react";
 const AboutMe = () => {
   return (
     <section
-      className="grid py-3 min-h-svh place-items-center scroll-mt-10"
+      className="relative grid py-3 min-h-svh place-items-center scroll-mt-10"
       id="aboutMe"
     >
+      <svg
+        id="visual"
+        viewBox="0 0 900 900"
+        width="1400"
+        height="1400"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        class="-z-10 absolute -top-20 -left-[920px]  lg:-left-[1000px]"
+      >
+        <g transform="translate(489.79892233902535 503.8402273150739)">
+          <path
+            d="M181.2 -217.8C219.5 -142.8 224.8 -71.4 202.3 -22.4C179.9 26.5 129.7 53 91.4 105.9C53 158.7 26.5 237.9 -14.8 252.6C-56.1 267.4 -112.2 217.9 -172.4 165C-232.5 112.2 -296.8 56.1 -295.2 1.5C-293.7 -53 -226.4 -106.1 -166.2 -181.1C-106.1 -256.1 -53 -353 9.2 -362.2C71.4 -371.4 142.8 -292.8 181.2 -217.8"
+            fill="#172554"
+          ></path>
+        </g>
+      </svg>
+
       <div className="w-[95%] my-6 bg-slate-200 p-1 grid gap-4 rounded-md py-10 px-3">
         <div className="">
           <p className="font-bold text-[clamp(0.8rem,_0.6rem_+_1vw,_1rem)]">
