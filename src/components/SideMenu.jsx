@@ -17,7 +17,7 @@ const SideMenu = ({ setIsSideMenuOpen }) => {
       <div className="p-4 text-white bg-blue-950 text-[clamp(1rem,_1rem_+_1vw,_2rem)]">
         <div className="w-full ">
           <FaTimes
-            className="ml-auto text-[clamp(1rem,_1.4rem_+_1vw,_2rem)]"
+            className="ml-auto text-[clamp(1rem,_1.4rem_+_1vw,_2rem)] cursor-pointer"
             onClick={() => setIsSideMenuOpen(false)}
           />
         </div>
