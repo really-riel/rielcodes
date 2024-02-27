@@ -53,7 +53,7 @@ const Banner = () => {
 
         <a
           href="#aboutMe"
-          className="absolute bottom-0 text-3xl transform -translate-x-1/2 cursor-pointer left-1/2 text-blue-950"
+          className="absolute bottom-0 grid w-12 h-12 text-3xl transform -translate-x-1/2 cursor-pointer place-content-center left-1/2 text-blue-950"
         >
           <MdArrowDownward className="animate-bounce" />
         </a>

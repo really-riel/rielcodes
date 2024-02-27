@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { MdMailOutline } from "react-icons/md";
+import { toast } from "react-toastify";
 
 const ContactMe = () => {
   const form = useRef();
@@ -9,17 +10,20 @@ const ContactMe = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
-        publicKey: "YOUR_PUBLIC_KEY",
+      .sendForm("service_f4ctodd", "template_rd2kqft", form.current, {
+        publicKey: "JTN7BLGeS1tUqwNoX",
       })
       .then(
         () => {
           console.log("SUCCESS!");
+          toast.success("Message sent successfully!");
         },
         (error) => {
           console.log("FAILED...", error.text);
+          toast.error("Not sent, please try again");
         }
       );
+    e.target.reset();
   };
   return (
     <section
@@ -54,6 +58,7 @@ const ContactMe = () => {
             name="user_name"
             placeholder="name"
             className="w-full p-4 bg-blue-100 "
+            required
           />
           <label className="offscreen">Email</label>
           <input
@@ -61,18 +66,21 @@ const ContactMe = () => {
             name="user_email"
             placeholder="email"
             className="w-full p-4 bg-blue-100"
+            required
           />
           <label className="offscreen ">Message</label>
           <textarea
             name="message"
-            className="grid w-full p-4 bg-blue-100 outline-none resize-none"
+            className="grid w-full p-4 bg-blue-100 resize-none"
             placeholder="message"
           />
-          <input
+          <button
             type="submit"
             value="Send"
-            className="w-full p-5 text-white bg-blue-950"
-          />
+            className="w-full p-5 text-white cursor-pointer focus-within:bg-blue-700 hover:bg-blue-700 bg-blue-950"
+          >
+            Send
+          </button>
         </form>
       </div>
     </section>
