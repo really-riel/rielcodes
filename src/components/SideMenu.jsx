@@ -1,9 +1,15 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const SideMenu = ({ setIsSideMenuOpen }) => {
   return (
-    <div className="grid grid-cols-[30%_70%]  left-0 right-0 z-50   fixed top-0 bottom-0 m-0 ">
+    <motion.div
+      initial={{ opacity: 0, x: 100 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 200 }}
+      className="grid grid-cols-[30%_70%]  left-0 right-0 z-50   fixed top-0 bottom-0 m-0 "
+    >
       <div
         className="bg-black bg-opacity-50"
         onClick={() => setIsSideMenuOpen(false)}
@@ -32,7 +38,7 @@ const SideMenu = ({ setIsSideMenuOpen }) => {
           </ul>
         </nav>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
