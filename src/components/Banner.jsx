@@ -7,11 +7,11 @@ const Banner = () => {
   return (
     <section className="relative grid w-full px-2 py-20 overflow-hidden min-h-svh place-content-center ">
       <div className="text-[clamp(1rem,_0.2rem_+_1vw,_2rem)]  flex flex-col justify-center lg:flex-row-reverse  mx-auto gap-6">
-        <figure className="w-52 h-52 md:w-72 md:h-72 rounded-[50%] overflow-hidden mx-auto">
+        <figure className="w-52 h-52 blob md:w-80 md:h-80 rounded-[50%] overflow-hidden mx-auto">
           <img
             src={pf}
             alt="Irregular frame"
-            className="object-cover object-top w-full h-full irregular-frame-image"
+            className="object-cover  object-top w-full h-full irregular-frame-image"
           />
         </figure>
         <div className="grid gap-1 ">
@@ -50,7 +50,6 @@ const Banner = () => {
             </a>
           </div>
         </div>
-
         <a
           href="#aboutMe"
           className="absolute bottom-0 grid w-12 h-12 text-3xl transform -translate-x-1/2 cursor-pointer place-content-center left-1/2 text-blue-950"
