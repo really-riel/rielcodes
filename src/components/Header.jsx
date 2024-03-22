@@ -7,8 +7,12 @@ const Header = () => {
   return (
     <>
       <header className="flex justify-between items-center fixed mx-auto   inset-x-[10px] top-0 bg-blue-950 bg-opacity-50 backdrop-filter backdrop-blur-lg backdrop-saturate-150 p-3 rounded-xl mt-2 z-50 max-w-[1000px] text-white color">
-        <h1 className="text-xl italic font-extrabold text-white color">
-          Riel Codes
+        <h1 className="text-xl font-[900] text-white color ">
+          Riel{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-pink-700 to-blue-700 ">
+            {" "}
+            Codes
+          </span>
         </h1>
         <IoMenu
           className="text-[1.8rem] cursor-pointer text-white md:hidden"
