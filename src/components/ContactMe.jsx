@@ -42,7 +42,8 @@ const ContactMe = () => {
           className="flex items-center gap-2 mt-4"
         >
           {" "}
-          <MdMailOutline className="text-xl" /> ag.adeyinka@gmail.com
+          <MdMailOutline className="text-xl" />
+          adeyinka.ag@gmail.com
         </a>
       </div>
 
