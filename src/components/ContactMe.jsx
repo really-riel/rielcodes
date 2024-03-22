@@ -78,7 +78,7 @@ const ContactMe = () => {
           <button
             type="submit"
             value="Send"
-            className="w-full p-5 text-white cursor-pointer focus-within:bg-blue-700 hover:bg-blue-700 bg-blue-950"
+            className="w-full p-5 text-white cursor-pointer hover:bg-blue-700 bg-blue-950"
           >
             Send
           </button>
