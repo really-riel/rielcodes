@@ -7,11 +7,11 @@ const Banner = () => {
   return (
     <section className="relative grid w-full px-2 py-20 overflow-hidden min-h-svh place-content-center ">
       <div className="text-[clamp(1rem,_0.2rem_+_1vw,_2rem)]  flex flex-col justify-center lg:flex-row-reverse  mx-auto gap-6">
-        <figure className="w-52 h-52 blob md:w-80 md:h-80 rounded-[50%] overflow-hidden mx-auto">
+        <figure className="w-52 h-52 blob max-sm[]:bg-red-500 md:w-80 md:h-80 rounded-[50%] overflow-hidden mx-auto">
           <img
             src={pf}
             alt="Irregular frame"
-            className="object-cover  object-top w-full h-full irregular-frame-image"
+            className="object-cover object-top w-full h-full irregular-frame-image"
           />
         </figure>
         <div className="grid gap-1 ">
@@ -27,12 +27,12 @@ const Banner = () => {
             find out more <span className="font-semibold">about me.</span>{" "}
           </p>
           <div className="flex items-center gap-3 ">
-            <a
+            {/* <a
               href="https://twitter.com/really__riel"
               className="w-10 h-10 rounded-[50%] bg-blue-100 grid place-content-center"
             >
               <IoLogoTwitter className="text-xl" />
-            </a>
+            </a> */}
             <a
               href="http://www.linkedin.com/in/adeolu-adeyinka-54b208201"
               target="_blank"

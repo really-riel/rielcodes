@@ -1,4 +1,5 @@
 import React from "react";
+import resume from "../assets/Adeolu-Adeyinka-Resume.pdf";
 
 const AboutMe = () => {
   return (
@@ -70,6 +71,16 @@ const AboutMe = () => {
           <li>Tailwind</li>
           <li>SCSS</li>
         </ul>
+        <hr className="bg-red-500" />
+        <div>
+          <a
+            className="p-2 text-white border-2 border-black bg-blue-950 hover:bg-blue-700"
+            href={resume}
+            download
+          >
+            Resume
+          </a>
+        </div>
       </div>
     </section>
   );
