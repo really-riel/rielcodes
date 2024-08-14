@@ -66,6 +66,8 @@ const AboutMe = () => {
           <li>CSS</li>
           <li>JavaScript</li>
           <li>React.js</li>
+          <li>Next Js</li>
+          <li>Typescript</li>
           <li>Firebase</li>
           <li>Redux</li>
           <li>Tailwind</li>
