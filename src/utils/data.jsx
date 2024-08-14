@@ -42,7 +42,7 @@ export const projectsData = [
   {
     images: [foodieland1, foodieland2, foodieland3, foodieland4],
     title: "Foodieland",
-    technologies: ["Next js", "Typescript", "tailwind"],
+    technologies: ["Next js", "Typescript", "Tailwind"],
     description:
       "A dynamic online food store featuring a diverse selection of healthy foods and recipes. The site is fully mobile-responsive, ensuring a seamless shopping experience on any device.",
     liveDemo: "https://foodieland-tobamstest.vercel.app",
