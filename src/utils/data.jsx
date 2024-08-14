@@ -3,10 +3,16 @@ import GoldenHome from "../assets/Goldenursh-Home.png";
 import GoldenAdminChatbox from "../assets/Goldenursh-adminChatbox.png";
 import GoldenAdmin from "../assets/Goldenursh-admin.png";
 import GoldenAdminMessage from "../assets/Goldenursh-admin-message.png";
+
 import SpaceCrew from "../assets/SpaceTourism-Crew.png";
 import SpaceDestination from "../assets/SpaceTourism-Destination.png";
 import SpaceHome from "../assets/SpaceTourism-home.png";
 import SpaceTech from "../assets/SpaceTourismTech.png";
+
+import foodieland1 from "../assets/foodieland1.png";
+import foodieland2 from "../assets/foodieland2.png";
+import foodieland3 from "../assets/foodieland3.png";
+import foodieland4 from "../assets/foodieland4.png";
 
 export const projectsData = [
   {
@@ -32,6 +38,15 @@ export const projectsData = [
     description: "This is a front end mentor challenge",
     liveDemo: "https://rielspacetourism.vercel.app",
     codeLink: "https://github.com/really-riel/space-tourism-website",
+  },
+  {
+    images: [foodieland1, foodieland2, foodieland3, foodieland4],
+    title: "Foodieland",
+    technologies: ["Next js", "Typescript", "tailwind"],
+    description:
+      "A dynamic online food store featuring a diverse selection of healthy foods and recipes. The site is fully mobile-responsive, ensuring a seamless shopping experience on any device.",
+    liveDemo: "https://foodieland-tobamstest.vercel.app",
+    codeLink: "https://github.com/really-riel/foodieland",
   },
 ];
 
