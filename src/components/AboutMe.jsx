@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../assets/Adeolu-Adeyinka-Resume.pdf";
+import resume from "../assets/Adeolu-Resume";
 
 const AboutMe = () => {
   return (
