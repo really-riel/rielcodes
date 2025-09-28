@@ -21,7 +21,7 @@ const Banner = () => {
           </p>
           <p className="font-bold text-[clamp(1.5rem,_1.1rem_+_2vw,_3rem)]">
             {" "}
-            Frontend Developer{" "}
+            Web Developer{" "}
           </p>
           <p>
             find out more <span className="font-semibold">about me.</span>{" "}
