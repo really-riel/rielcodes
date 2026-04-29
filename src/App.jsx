@@ -7,11 +7,12 @@ import AboutMe from "./components/AboutMe";
 import Footer from "./components/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import { Analytics } from "@vercel/analytics/next";
 function App() {
   return (
     <>
       <ToastContainer position="top-right" />
+      <Analytics />
       <div className="relative w-full overflow-hidden ">
         <svg
           id="visual"
@@ -20,7 +21,7 @@ function App() {
           height="1200"
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
-          className="z-10 absolute -top-[200px] md:top-0 -right-[450px] lg:-right-96 max-h-screen  "
+          className="-z-10 absolute -top-[200px] md:top-0 -right-[450px] lg:-right-96 max-h-screen  "
         >
           <g transform="translate(927.4519875387796 -111.9512848530959)">
             <path
