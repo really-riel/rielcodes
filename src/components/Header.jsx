@@ -1,23 +1,32 @@
 import React, { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import SideMenu from "./SideMenu";
+import { AnimatePresence } from "framer-motion";
+import { FaTimes } from "react-icons/fa";
 
 const Header = () => {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
   return (
     <>
-      <header className="flex justify-between items-center fixed mx-auto   inset-x-[10px] top-0 bg-blue-950 bg-opacity-50 backdrop-filter backdrop-blur-lg backdrop-saturate-150 p-3 rounded-xl mt-2 z-50 max-w-[1000px] text-white color">
+      <header className="flex justify-between items-center fixed mx-auto   inset-x-[10px] top-0 bg-blue-900 bg-opacity-50 backdrop-filter backdrop-blur-lg backdrop-saturate-150 p-3 rounded-xl mt-2 z-50 max-w-[1000px] text-white color">
         <h1 className="text-xl font-[900] text-white color ">
           Riel{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-pink-700 to-blue-700 ">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-900 to-blue-700 ">
             {" "}
             Codes
           </span>
         </h1>
-        <IoMenu
-          className="text-[1.8rem] cursor-pointer text-white md:hidden"
-          onClick={() => setIsSideMenuOpen(!isSideMenuOpen)}
-        />
+        {isSideMenuOpen ? (
+          <FaTimes
+            className="text-[1.8rem] cursor-pointer text-white md:hidden"
+            onClick={() => setIsSideMenuOpen(!isSideMenuOpen)}
+          />
+        ) : (
+          <IoMenu
+            className="text-[1.8rem] cursor-pointer text-white md:hidden"
+            onClick={() => setIsSideMenuOpen(!isSideMenuOpen)}
+          />
+        )}
 
         {/* Desktop nav */}
         <nav className="hidden md:flex">
@@ -48,7 +57,10 @@ const Header = () => {
       </header>
 
       {/* Side nav */}
-      {isSideMenuOpen && <SideMenu setIsSideMenuOpen={setIsSideMenuOpen} />}
+
+      <AnimatePresence>
+        {isSideMenuOpen && <SideMenu setIsSideMenuOpen={setIsSideMenuOpen} />}
+      </AnimatePresence>
     </>
   );
 };

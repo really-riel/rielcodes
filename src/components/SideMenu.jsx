@@ -5,22 +5,17 @@ import { motion } from "framer-motion";
 const SideMenu = ({ setIsSideMenuOpen }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, x: 100 }}
+      initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: 200 }}
-      className="grid grid-cols-[30%_70%]  left-0 right-0 z-50   fixed top-0 bottom-0 m-0 "
+      exit={{ opacity: 0, y: -100 }}
+      className="fixed z-20 grid inset-x-[10px] m-0 top-11 bg-blue-900 bg-opacity-50 backdrop-filter backdrop-blur-lg backdrop-saturate-150  max-w-[1000px] rounded-lg lg:hidden"
     >
-      <div
+      {/* <div
         className="bg-black bg-opacity-50"
         onClick={() => setIsSideMenuOpen(false)}
-      ></div>
-      <div className="p-4 text-white bg-blue-950 text-[clamp(1rem,_1rem_+_1vw,_2rem)]">
-        <div className="w-full ">
-          <FaTimes
-            className="ml-auto text-[clamp(1rem,_1.4rem_+_1vw,_2rem)] cursor-pointer"
-            onClick={() => setIsSideMenuOpen(false)}
-          />
-        </div>
+      ></div> */}
+      <div className="p-4 w-full text-white  text-[clamp(1rem,_1rem_+_1vw,_2rem)]">
+        <div className="w-full "></div>
         <nav className="">
           <ul className="flex flex-col gap-4 mt-4 ">
             <a href="#" className="" onClick={() => setIsSideMenuOpen(false)}>
