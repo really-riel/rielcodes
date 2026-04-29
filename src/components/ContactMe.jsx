@@ -37,7 +37,7 @@ const ContactMe = () => {
         height="1400"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        class="-z-10 absolute -top-20 -left-[920px]  lg:-left-[1000px]"
+        class="-z-10 absolute -top-[23rem] -left-[920px]  lg:-left-[1120px]"
       >
         <g transform="translate(489.79892233902535 503.8402273150739)">
           <path

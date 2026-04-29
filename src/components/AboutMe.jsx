@@ -2,6 +2,9 @@ import React from "react";
 import resume from "../assets/Adeolu-Resume.pdf";
 
 import TechIcons from "./TechIcons";
+import { FaDownload } from "react-icons/fa";
+import { PiDownload } from "react-icons/pi";
+import { BsDownload } from "react-icons/bs";
 
 const AboutMe = () => {
   return (
@@ -69,11 +72,12 @@ const AboutMe = () => {
         <hr className="bg-red-500" />
         <div>
           <a
-            className="p-2 text-white border-2 border-black rounded-lg bg-blue-950 hover:bg-blue-700"
+            className="flex items-center gap-2 p-2 text-white border-2 border-black rounded-lg w-fit bg-blue-950 hover:bg-blue-700"
             href={resume}
             download
           >
             Resume
+            <BsDownload />
           </a>
         </div>
       </div>
