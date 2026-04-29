@@ -14,8 +14,15 @@ import foodieland2 from "../assets/foodieland2.png";
 import foodieland3 from "../assets/foodieland3.png";
 import foodieland4 from "../assets/foodieland4.png";
 
+import dwh1 from "../assets/Data Model.png";
+import dwh2 from "../assets/DWH Data Flow Diagram.png";
+import dwh3 from "../assets/DWH project architecture.png";
+
+import dwh4 from "../assets/Integration Model Diagram.png";
+
 export const projectsData = [
   {
+    type: "web",
     images: [
       GoldenHome,
       GoldenLogin,
@@ -32,6 +39,7 @@ export const projectsData = [
   },
 
   {
+    type: "web",
     images: [SpaceHome, SpaceDestination, SpaceCrew, SpaceTech],
     title: "Space Tourism",
     technologies: ["React.js", "SCSS"],
@@ -40,6 +48,7 @@ export const projectsData = [
     codeLink: "https://github.com/really-riel/space-tourism-website",
   },
   {
+    type: "web",
     images: [foodieland1, foodieland2, foodieland3, foodieland4],
     title: "Foodieland",
     technologies: ["Next js", "Typescript", "Tailwind"],
@@ -47,6 +56,17 @@ export const projectsData = [
       "A dynamic online food store featuring a diverse selection of healthy foods and recipes. The site is fully mobile-responsive, ensuring a seamless shopping experience on any device.",
     liveDemo: "https://foodieland-tobamstest.vercel.app",
     codeLink: "https://github.com/really-riel/foodieland",
+  },
+
+  {
+    type: "data",
+    images: [dwh1, dwh2, dwh3, dwh4],
+    title: "SQL Data WareHouse",
+    technologies: ["SQL"],
+    description:
+      "Designed and implemented a SQL-based data warehouse using a Medallion Architecture (Bronze, Silver, Gold) to ingest, clean, and transform raw ERP and CRM data into a structured star schema for analytics. Built ETL pipelines and executed SQL queries to generate insights on customer behavior, product performance, and sales trends, enabling more informed business decisions.",
+    liveDemo: null,
+    codeLink: "https://github.com/really-riel/SQL-Data-Warehouse-Project",
   },
 ];
 

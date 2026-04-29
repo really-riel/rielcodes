@@ -31,9 +31,11 @@ const Projects = () => {
             >
               Code <FaGithub />{" "}
             </a>
-            <a href={project.liveDemo} target="_blank">
-              Live Demo
-            </a>
+            {project.liveDemo && (
+              <a href={project.liveDemo} target="_blank">
+                Live Demo
+              </a>
+            )}
           </div>
         </div>
       </div>
@@ -60,7 +62,9 @@ const Projects = () => {
       </svg>
 
       <div className="flex flex-col items-center w-full gap-5 ">
-        <h2 className="text-[clamp(1rem,_1rem_+_1vw,_1.8rem)] ">Projects</h2>
+        <h2 className="text-[clamp(1rem,_1rem_+_1vw,_1.8rem)] ">
+          Web Dev Projects
+        </h2>
         <div className="flex flex-col items-center w-full max-w-full gap-10">
           {content}
         </div>

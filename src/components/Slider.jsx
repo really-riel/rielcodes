@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   BsFillArrowRightCircleFill,
   BsFillArrowLeftCircleFill,
@@ -17,6 +17,14 @@ const Slider = ({ images }) => {
     else setCurrent(current + 1);
   };
 
+  // 🔥 AUTO SLIDE
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev === images?.length - 1 ? 0 : prev + 1));
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [images]);
   return (
     <div className="relative overflow-hidden">
       <div
