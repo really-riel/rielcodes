@@ -31,7 +31,7 @@ export const projectsData = [
       GoldenAdminChatbox,
     ],
     title: "Goldenursh",
-    technologies: ["React.js", "Firebase", "SCSS", "easypeasy"],
+    technologies: ["React", "Firebase", "SCSS", "easypeasy"],
     description:
       "This is a fully responsive online food delivery service, catering to customers' needs with features including account creation, an intuitive admin interface, and a dedicated chatroom facilitating seamless communication between users and administrators.",
     liveDemo: "https://goldenursh.vercel.app",
@@ -42,7 +42,7 @@ export const projectsData = [
     type: "web",
     images: [SpaceHome, SpaceDestination, SpaceCrew, SpaceTech],
     title: "Space Tourism",
-    technologies: ["React.js", "SCSS"],
+    technologies: ["React", "SCSS"],
     description: "This is a front end mentor challenge",
     liveDemo: "https://rielspacetourism.vercel.app",
     codeLink: "https://github.com/really-riel/space-tourism-website",
@@ -51,7 +51,7 @@ export const projectsData = [
     type: "web",
     images: [foodieland1, foodieland2, foodieland3, foodieland4],
     title: "Foodieland",
-    technologies: ["Next js", "Typescript", "Tailwind"],
+    technologies: ["Next.js", "TypeScript", "Tailwind"],
     description:
       "A dynamic online food store featuring a diverse selection of healthy foods and recipes. The site is fully mobile-responsive, ensuring a seamless shopping experience on any device.",
     liveDemo: "https://foodieland-tobamstest.vercel.app",

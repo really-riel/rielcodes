@@ -1,6 +1,8 @@
 import React from "react";
 import resume from "../assets/Adeolu-Resume.pdf";
 
+import TechIcons from "./TechIcons";
+
 const AboutMe = () => {
   return (
     <section
@@ -50,7 +52,7 @@ const AboutMe = () => {
           <p className="">
             Mechanical Engineering
             <br />
-            <span className="opacity-50">
+            <span className="opacity-70">
               Federal university of Agriculture, Abeokuta.
               <br />
               2023
@@ -61,26 +63,13 @@ const AboutMe = () => {
         <h2 className="font-bold text-[clamp(1rem,_0.6rem_+_1vw,_1.2rem)] ">
           MY SKILLS
         </h2>
-        <ul className="flex items-center flex-wrap *:border-2 *:border-black *:px-1 gap-2">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React.js</li>
-          <li>Next Js</li>
-          <li>Typescript</li>
-          <li>Firebase</li>
-          <li>Redux</li>
-          <li>Tailwind</li>
-          <li>SCSS</li>
-          <li>Python</li>
-          <li>FastAPI</li>
-          <li>SQL</li>
-          <li>AWS</li>
-        </ul>
+
+        <TechIcons />
+
         <hr className="bg-red-500" />
         <div>
           <a
-            className="p-2 text-white border-2 border-black bg-blue-950 hover:bg-blue-700"
+            className="p-2 text-white border-2 border-black rounded-lg bg-blue-950 hover:bg-blue-700"
             href={resume}
             download
           >

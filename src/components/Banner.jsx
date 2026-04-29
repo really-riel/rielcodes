@@ -7,16 +7,16 @@ const Banner = () => {
   return (
     <section className="relative grid w-full px-2 py-20 overflow-hidden min-h-svh place-content-center ">
       <div className="text-[clamp(1rem,_0.2rem_+_1vw,_2rem)]  flex flex-col justify-center lg:flex-row-reverse  mx-auto gap-20">
-        <figure className="w-52 h-52 blob max-sm[]:bg-red-500 md:w-80 md:h-80 rounded-[50%] overflow-hidden mx-auto">
+        <figure className="w-52 h-52 blob max-sm[]:bg-red-500 md:w-80 md:h-80 rounded-[50%] overflow-hidden mx-auto ">
           <img
             src={pf}
             alt="Irregular frame"
             className="object-cover object-top w-full h-full irregular-frame-image"
           />
         </figure>
-        <div className="grid gap-1 ">
+        <div className="flex flex-col justify-center gap-3 ">
           <p className="font-semibold">Hey, I'm </p>
-          <p className="font-extrabold text-[clamp(1rem,_1.5rem_+_1vw,_2rem)]">
+          <p className="font-extrabold text-[clamp(1rem,_1.5rem_+_1vw,_2.1rem)]">
             Adeyinka Adeolu.
           </p>
           <p className="font-bold text-[clamp(1.5rem,_1.1rem_+_2vw,_3rem)]">

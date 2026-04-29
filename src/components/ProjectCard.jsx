@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "./Slider";
 import { FaGithub } from "react-icons/fa";
+import TechIcons from "./TechIcons";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -11,13 +12,7 @@ const ProjectCard = ({ project }) => {
         <Slider images={project.images} />
 
         <div className="flex flex-col gap-3 mt-4 grow">
-          <ul className="flex flex-wrap items-center gap-2">
-            {project.technologies.map((tech, ind) => (
-              <li className="px-2 border-2 border-black" key={ind}>
-                {tech}
-              </li>
-            ))}
-          </ul>
+          <TechIcons tech={project.technologies} />
 
           <p>{project.description}</p>
 
