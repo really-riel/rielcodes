@@ -7,11 +7,12 @@ import AboutMe from "./components/AboutMe";
 import Footer from "./components/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Analytics } from "@vercel/analytics/react";
+import { inject } from "@vercel/analytics";
+
 function App() {
+  inject();
   return (
     <>
-      <Analytics />
       <ToastContainer position="top-right" />
 
       <div className="relative w-full overflow-hidden ">
