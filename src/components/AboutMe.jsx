@@ -72,6 +72,10 @@ const AboutMe = () => {
           <li>Redux</li>
           <li>Tailwind</li>
           <li>SCSS</li>
+          <li>Python</li>
+          <li>FastAPI</li>
+          <li>SQL</li>
+          <li>AWS</li>
         </ul>
         <hr className="bg-red-500" />
         <div>
