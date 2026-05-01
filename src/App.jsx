@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Banner from "./components/Banner";
 import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
@@ -11,6 +10,7 @@ import { inject } from "@vercel/analytics";
 
 function App() {
   inject();
+
   return (
     <>
       <ToastContainer position="top-right" />

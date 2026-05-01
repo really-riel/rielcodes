@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import SideMenu from "./SideMenu";
 import { AnimatePresence } from "framer-motion";
@@ -6,6 +6,7 @@ import { FaTimes } from "react-icons/fa";
 
 const Header = () => {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
+
   return (
     <>
       <header className="flex justify-between items-center fixed mx-auto   inset-x-[10px] top-0 bg-blue-900 bg-opacity-50 backdrop-filter backdrop-blur-lg backdrop-saturate-150 p-3 rounded-xl mt-2 z-50 max-w-[1000px] text-white color">

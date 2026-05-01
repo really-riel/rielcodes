@@ -30,22 +30,25 @@ const ContactMe = () => {
       className="relative flex flex-col justify-center w-full p-5 min-h-svh scroll-mt-12 lg:place-content-center "
       id="contactMe"
     >
-      <svg
-        id="visual"
-        viewBox="0 0 900 900"
-        width="1400"
-        height="1400"
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-        class="-z-10 absolute -top-[23rem] -left-[920px]  lg:-left-[1120px]"
-      >
-        <g transform="translate(489.79892233902535 503.8402273150739)">
-          <path
-            d="M181.2 -217.8C219.5 -142.8 224.8 -71.4 202.3 -22.4C179.9 26.5 129.7 53 91.4 105.9C53 158.7 26.5 237.9 -14.8 252.6C-56.1 267.4 -112.2 217.9 -172.4 165C-232.5 112.2 -296.8 56.1 -295.2 1.5C-293.7 -53 -226.4 -106.1 -166.2 -181.1C-106.1 -256.1 -53 -353 9.2 -362.2C71.4 -371.4 142.8 -292.8 181.2 -217.8"
-            fill="#172554"
-          ></path>
-        </g>
-      </svg>
+      {/* 
+        <svg
+          id="visual"
+          viewBox="0 0 900 900"
+          width="1400"
+          height="1400"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          class="-z-10 absolute -top-[23rem] -left-[920px] pointer-events-none  lg:-left-[1120px]"
+        >
+          <g transform="translate(489.79892233902535 503.8402273150739)">
+            <path
+              d="M181.2 -217.8C219.5 -142.8 224.8 -71.4 202.3 -22.4C179.9 26.5 129.7 53 91.4 105.9C53 158.7 26.5 237.9 -14.8 252.6C-56.1 267.4 -112.2 217.9 -172.4 165C-232.5 112.2 -296.8 56.1 -295.2 1.5C-293.7 -53 -226.4 -106.1 -166.2 -181.1C-106.1 -256.1 -53 -353 9.2 -362.2C71.4 -371.4 142.8 -292.8 181.2 -217.8"
+              fill="#172554"
+            ></path>
+          </g>
+        </svg>
+     */}
+
       <div className="flex flex-col min-w-full p-4 bg-white shadow-2xl lg:grid lg:grid-cols-2 lg:flex-row rounded-xl">
         <div className="">
           <h2 className="text-[clamp(1rem,_1rem_+_1vw,_1.8rem)] ">
