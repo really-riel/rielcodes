@@ -1,5 +1,5 @@
 import React from "react";
-import pf from "../assets/whatsapp pfp.jpg";
+import pf from "../assets/whatsapp pfp.png";
 import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
 import { MdArrowDownward } from "react-icons/md";
 
@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <section className="relative grid w-full px-2 py-20 overflow-hidden min-h-svh place-content-center">
       <div className="text-[clamp(1rem,_0.2rem_+_1vw,_2rem)]  flex flex-col justify-center lg:flex-row-reverse  mx-auto gap-20">
-        <figure className="w-52 h-52 blob max-sm[]:bg-red-500 md:w-80 md:h-80 rounded-[50%] overflow-hidden mx-auto ">
+        <figure className="w-52 h-52 blob max-sm[]:bg-red-500 md:w-80 md:h-80 rounded-[50%] lg:h-96 lg:w-96 overflow-hidden mx-auto ">
           <img
             src={pf}
             alt="Irregular frame"
